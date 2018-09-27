@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+1.30.1
+------
+
+* Replace assertRaisesRegexp with assertRaisesRegex
+* Avoids calling ffi.dlopen(None) on Windows
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* Remove PyPI downloads
+* import zuul job settings from project-config
+* Add that 'Release Notes' in README
+* Update reno for stable/rocky
+* Switch to stestr
+* fix tox python3 overrides
+* Added example blogposts
+* Trivial: Update pypi url to new url
+
 1.29.0
 ------
 

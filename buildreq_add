@@ -1,2 +1,7 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
+oslo.utils
+oslo.config
+oslo.log
+python-dateutil
+hacking
