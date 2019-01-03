@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+1.31.0
+------
+
+* Use template for lower-constraints
+* Add futures as a requirement for Python 2
+* Update mailinglist from dev to discuss
+* Use threads to process target function
+* Clean up .gitignore references to personal tools
+* Don't quote {posargs} in tox.ini
+
 1.30.1
 ------
 
