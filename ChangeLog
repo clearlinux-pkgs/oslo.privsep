@@ -1,10 +1,15 @@
 CHANGES
 =======
 
+1.31.1
+------
+
+
 1.31.0
 ------
 
 * Use template for lower-constraints
+* Set unicode\_errors handler to 'surrogateescape' in msgpack
 * Add futures as a requirement for Python 2
 * Update mailinglist from dev to discuss
 * Use threads to process target function

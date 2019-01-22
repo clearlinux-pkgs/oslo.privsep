@@ -1,5 +1,5 @@
 PKG_NAME := oslo.privsep
-URL = https://files.pythonhosted.org/packages/b6/d5/daef2e4775a41a7b969f32673784d4e317312faad86149a5e9b56a3d0dd0/oslo.privsep-1.31.0.tar.gz
+URL = https://files.pythonhosted.org/packages/1f/c5/6c63e5a0db95f5ff84b9a712fb2abedea98b96ad2506e745c622f46ffbf3/oslo.privsep-1.31.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
