@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+1.33.0
+------
+
+* OpenDev Migration Patch
+* Convert dict keys received in \_ClientChannel from byte to str
+* Update master for stable/stein
+* Add sample\_default for thread\_pool\_size Opt
+
 1.32.1
 ------
 
