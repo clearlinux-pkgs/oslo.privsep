@@ -4,7 +4,7 @@
 #
 Name     : oslo.privsep
 Version  : 1.33.0
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/44/6c/a37a33c8bf54c771e188532e21cdaff6a0776621129fcf009fa288af4b25/oslo.privsep-1.33.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/44/6c/a37a33c8bf54c771e188532e21cdaff6a0776621129fcf009fa288af4b25/oslo.privsep-1.33.0.tar.gz
 Summary  : OpenStack library for privilege separation
@@ -17,7 +17,6 @@ Requires: oslo.privsep-python3 = %{version}-%{release}
 Requires: cffi
 Requires: enum34
 Requires: eventlet
-Requires: futures
 Requires: greenlet
 Requires: msgpack
 Requires: oslo.config
@@ -25,19 +24,22 @@ Requires: oslo.i18n
 Requires: oslo.log
 Requires: oslo.utils
 BuildRequires : buildreq-distutils3
+BuildRequires : cffi
+BuildRequires : enum34
+BuildRequires : eventlet
+BuildRequires : greenlet
 BuildRequires : hacking
+BuildRequires : msgpack
 BuildRequires : oslo.config
+BuildRequires : oslo.i18n
 BuildRequires : oslo.log
 BuildRequires : oslo.utils
 BuildRequires : pbr
 BuildRequires : python-dateutil
 
 %description
-========================
 Team and repository tags
-========================
-.. image:: https://governance.openstack.org/tc/badges/oslo.privsep.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+        ========================
 
 %package bin
 Summary: bin components for the oslo.privsep package.
@@ -82,7 +84,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1556300363
+export SOURCE_DATE_EPOCH=1559110441
+export GCC_IGNORE_WERROR=1
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$CFLAGS -fno-lto "
+export FFLAGS="$CFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
