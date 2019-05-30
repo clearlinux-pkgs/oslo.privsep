@@ -1,10 +1,18 @@
 CHANGES
 =======
 
+1.33.1
+------
+
+* Pass correct arguments to six.reraise
+* Cap Bandit below 1.6.0 and update Sphinx requirement
+* Replace git.openstack.org URLs with opendev.org URLs
+
 1.33.0
 ------
 
 * OpenDev Migration Patch
+* Add more usage documentation
 * Convert dict keys received in \_ClientChannel from byte to str
 * Update master for stable/stein
 * Add sample\_default for thread\_pool\_size Opt
