@@ -4,7 +4,7 @@
 #
 Name     : oslo.privsep
 Version  : 1.33.3
-Release  : 15
+Release  : 16
 URL      : https://files.pythonhosted.org/packages/7e/41/028dea0cee301a64ab506e07b2d31819e7c6ba7736e0b1d0d82a880fe972/oslo.privsep-1.33.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7e/41/028dea0cee301a64ab506e07b2d31819e7c6ba7736e0b1d0d82a880fe972/oslo.privsep-1.33.3.tar.gz
 Summary  : OpenStack library for privilege separation
