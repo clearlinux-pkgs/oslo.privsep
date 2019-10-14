@@ -4,7 +4,7 @@
 #
 Name     : oslo.privsep
 Version  : 1.33.3
-Release  : 16
+Release  : 17
 URL      : https://files.pythonhosted.org/packages/7e/41/028dea0cee301a64ab506e07b2d31819e7c6ba7736e0b1d0d82a880fe972/oslo.privsep-1.33.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7e/41/028dea0cee301a64ab506e07b2d31819e7c6ba7736e0b1d0d82a880fe972/oslo.privsep-1.33.3.tar.gz
 Summary  : OpenStack library for privilege separation
@@ -15,7 +15,6 @@ Requires: oslo.privsep-license = %{version}-%{release}
 Requires: oslo.privsep-python = %{version}-%{release}
 Requires: oslo.privsep-python3 = %{version}-%{release}
 Requires: cffi
-Requires: enum34
 Requires: eventlet
 Requires: greenlet
 Requires: msgpack
@@ -25,7 +24,6 @@ Requires: oslo.log
 Requires: oslo.utils
 BuildRequires : buildreq-distutils3
 BuildRequires : cffi
-BuildRequires : enum34
 BuildRequires : eventlet
 BuildRequires : greenlet
 BuildRequires : hacking
@@ -38,11 +36,8 @@ BuildRequires : pbr
 BuildRequires : python-dateutil
 
 %description
-========================
 Team and repository tags
-========================
-.. image:: https://governance.openstack.org/tc/badges/oslo.privsep.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+        ========================
 
 %package bin
 Summary: bin components for the oslo.privsep package.
@@ -87,8 +82,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1568320490
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1571082648
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -104,7 +98,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/oslo.privsep
-cp LICENSE %{buildroot}/usr/share/package-licenses/oslo.privsep/LICENSE
+cp %{_builddir}/oslo.privsep-1.33.3/LICENSE %{buildroot}/usr/share/package-licenses/oslo.privsep/294b43b2cec9919063be1a3b49e8722648424779
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -119,7 +113,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/oslo.privsep/LICENSE
+/usr/share/package-licenses/oslo.privsep/294b43b2cec9919063be1a3b49e8722648424779
 
 %files python
 %defattr(-,root,root,-)
