@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+2.0.0
+-----
+
+* remove outdated header
+* [ussuri][goal] Drop python 2.7 support and testing
+
 1.34.0
 ------
 
