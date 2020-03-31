@@ -2,6 +2,5 @@
 cinder
 glance_store
 neutron
-nova
 os-brick
 os_vif

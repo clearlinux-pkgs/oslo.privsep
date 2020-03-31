@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+2.1.0
+-----
+
+* Make compatible with msgpack 1.0.0
+* Bring sanity to lower-constraints
+* Disable logger validation during unit testing
+* Add lock around channel creation
+* trivial: Cleanup Sphinx config file, setup.cfg
+* tox: Add missing 'deps' for releasenotes testenv
+
 2.0.0
 -----
 
@@ -11,6 +21,7 @@ CHANGES
 ------
 
 * tox: Trivial cleanup
+* Add functional tests
 * Bump the openstackdocstheme extension to 1.20
 * tox: Keeping going with docs
 * Switch to Ussuri jobs
