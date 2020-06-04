@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+2.2.0
+-----
+
+* Fix hacking min version to 3.0.1
+* Switch to newer openstackdocstheme and reno versions
+* Remove the unused coding style modules
+* Remove translation sections from setup.cfg
+* Bump default tox env from py37 to py38
+* Add py38 package metadata
+* Add release notes links to doc index
+* Add Python3 victoria unit tests
+* Update master for stable/ussuri
+
 2.1.1
 -----
 
