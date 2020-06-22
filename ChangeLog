@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+2.2.1
+-----
+
+* Replace assertItemsEqual with assertCountEqual
+* Fix pygments style
+
 2.2.0
 -----
 
