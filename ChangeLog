@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+2.3.0
+-----
+
+* Undo the eventlet monkey patch for the privileged daemon
+
 2.2.1
 -----
 
@@ -14,6 +19,7 @@ CHANGES
 * Switch to newer openstackdocstheme and reno versions
 * Remove the unused coding style modules
 * Remove translation sections from setup.cfg
+* Align contributing doc with oslo's policy
 * Bump default tox env from py37 to py38
 * Add py38 package metadata
 * Add release notes links to doc index
