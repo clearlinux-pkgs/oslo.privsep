@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+2.4.0
+-----
+
+* [goal] Migrate testing to ubuntu focal
+* Bump bandit version
+
 2.3.0
 -----
 
